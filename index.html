@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script src="puzzle.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var canvas = document.getElementById("puzzle")
+      puzzle("test.jpg", canvas, 150, 150)
+
+      var newGame = document.getElementById("new")
+      newGame.addEventListener("click", function(){
+        puzzle("test.jpg", canvas, 150, 150)
+      })
+    })
+  </script>
+</head>
+
+<body>
+
+
+  <button id="new">Noch einmal</button>
+  <canvas id="puzzle" height="450" width="600" />
+
+</body>
+
+</html>
